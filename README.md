@@ -6,7 +6,7 @@
 * [Descrição do Projeto](#descrição-do-projeto)
 * [Desenvolvedor](#desenvolvedor)
 * [Lista de comandos](#Lista-de-comandos)
-* [Calculadora IMC](#Calculadora-IMC)
+
 
 # Descrição do projeto
  O intuito deste material é fazer uma análise didática de uma base de dados de uma empresa usando a biblioteca Pandas, que permite manipular,
@@ -62,8 +62,19 @@ max ou min (ja visto anteriormente). Abaixo exemplo de agrupamento com soma dos 
 
     - db = db.groupby('nomedacoluna').sum()
     
+#### Ordenando colunas do maior para o menor:
+    - df = df.sort_values('nome da coluna a ordenar', ascending=True) 
+     *** ascending=False == ordem decrescente
     
+#### Trabalhando com datas no pandas:
+
+Datas geralmente não são recoinhecidas, pra isso temos que converter datas de uma tabela para 
+datetime, o pandas faz isso com PD.TO_DATETIME():
+
+    - df[nomedacoluna] = pd.to_datetime(df[nomedacoluna], format='%d/%m/%Y')
     
+OBS: no format='%d/%m/%Y' temos que informar pro pandas qual formato esta na tabela
+para mais informações com trabalhar com data veja no projeto.
     
     
     
