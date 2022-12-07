@@ -31,20 +31,36 @@ Segue a lista e descrição dos comandos da biblioteca Pandas que iremos aprende
     - df.info()
 #### Lendo colunas específicas:
     - df = df[['coluna 1', 'coluna 2' ...]]
-#### pegando valor max e min de uma coluna:
+#### Pegando valor max e min de uma coluna:
     - df = max(df['coluna x'])
     - df = min(df['coluna x'])
-#### Comando .loc[...] localiza item com base num parametro:
+#### Comando .LOC[...] localiza item com base num parametro:
     - df.loc[df["coluna mes"] == "janeiro"]
-#### Removendo colunas(axis=1) ou linhas(axis=0) específicas .drop():
+#### Removendo colunas(axis=1) ou linhas(axis=0) específicas .DROP():
     - df = df.drop(['coluna 1', 'coluna 2' ...], axis=1)
+#### Mesclando tabelas distintas .MERGE():
+Podemos mesclar tabelas com o .merge(), porém para isso temos que ter em todas as 
+tabelas a serem mescladas uma coluna com mesmo nome para todos (esse sera nosso ID):
+
+
+    - new_df = df1.merge(df2, on="coluna") 
+    ** onde coluna = nome da coluna comum às duas tabelas (ID)
     
+#### Alterando nome de uma coluna .RENAME():
+    - df = df.rename(columns={'nome_antigo': 'novo_nome'})
+#### Contando quantas vezes um item aparece na tabela .VALUE_COUNTS()
+No caso abaixo vai mostrar qntas vezes cada cliente comprou ja que cada compra de cada cliente  fica registrada.
+
+    - compras_cada_cliente = df_vendas['compra cliente'].value_counts()
+#### Podemos tambem agrupar cada item de uma DB e calcular seus valores:
+Para agrupar usamos o GROUPBY():
+
+    - db = db.groupby('nomedacoluna')
     
-    
-    
-    
-    
-    
+Para calcular os valores dos itens agrupados podemos somar .SUM()/ fazer a média .MEAN()/
+max ou min (ja visto anteriormente). Abaixo exemplo de agrupamento com soma dos itens:
+
+    - db = db.groupby('nomedacoluna').sum()
     
     
     
