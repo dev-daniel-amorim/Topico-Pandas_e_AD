@@ -75,6 +75,30 @@ datetime, o pandas faz isso com PD.TO_DATETIME():
     
 OBS: no format='%d/%m/%Y' temos que informar pro pandas qual formato esta na tabela
 para mais informações com trabalhar com data veja no projeto.
+
+#### Transformando coluna em linha SET_INDEX()
+
+    - new_df = df.set_index('nomeda coluna')
+    
+#### Localizando itempelo nome do index LOC()
+
+    - db.loc[['nome da linha']]
+    
+#### Localizando item pela linha x coluna ILOC()
+
+    - db.iloc(linha, coluna)
+    
+#### Salvando uma tabela
+
+Atenção aos parametros: encoding='utf-8', encoding='cp1252', encoding='latin1' ou encoding='ISO-8859-1'
+    
+    - dataframe.to_csv('nome do qrquivo.extensao', sep=';', encoding='latin1')
+
+#### Transformando um dict em um data frame
+
+Atenção, o parametro orient='index' transforma as colunas em linhas.
+
+    - df = pd.DataFrame.from_dict(nomedodict, orient='index')
     
     
     
