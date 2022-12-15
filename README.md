@@ -10,11 +10,9 @@
 
 # Descrição do projeto
 
- O intuito deste material é fazer uma análise didática de uma base de dados de uma empresa usando a biblioteca Pandas, que permite manipular,
- e analisar diversas fontes de dados (excel, csv, pdf etc).
- Neste tutorial iremos usar dados fictícios de uma empresa, para com base nessas informações responder algumas perguntas que podem
- contribuir para melhorias de um serviço, para o financeiro de uma empresa ou até mesmo correções/melhorias de processos dentro de uma 
- empresa visando sempre o sucesso da organização.
+O intuito deste material é o estudo da ferramenta do Python que auxilia no data science chamada Pandas.<br>
+Mas oq eu é Pandas e para que serve?<br>
+- Melhor biblioteca/ferramenta para análise de dados capaz de ler e manipular informações de datasets com quantidades enormes de dados, o Pandas consegue lidar com uma mistura de listas e dicionários de uma forma muito eficiente.
 
 # Desenvolvedor
 
