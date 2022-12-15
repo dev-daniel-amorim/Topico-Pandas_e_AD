@@ -1,5 +1,5 @@
-# Análise de dados (Pandas)
- Análise de dados em Python usando Pandas e Jupyter Notebook.
+# Pandas - Análise de dados
+ Análise de dados em Python usando biblioteca Pandas.
 
 # Índice 
 
