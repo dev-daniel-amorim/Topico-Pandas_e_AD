@@ -82,8 +82,13 @@ datetime, o pandas faz isso com PD.TO_DATETIME():
 
     - df[nomedacoluna] = pd.to_datetime(df[nomedacoluna], format='%d/%m/%Y')
     
-OBS: no format='%d/%m/%Y' temos que informar pro pandas qual formato esta na tabela
-para mais informações com trabalhar com data veja no projeto.
+OBS: no format='%d/%m/%Y' temos que informar pro pandas qual formato "está formatada a tabela"
+para assim ela fazer a conversão correta.<br>
+Depois de convertida a data para datetime temos acesso ao metodo (.day), (.month) e (.ano)<br>
+Exemplo como pegar o mês em um date time:
+
+    - mes = df['data'].month
+    * método .month extrai somente o mês da data.
 
 #### Transformando coluna em linha SET_INDEX()
 
