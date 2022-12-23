@@ -95,9 +95,13 @@ Atenção, o parametro orient='index' transforma as colunas em linhas.
 
 Pathlib é uma biblioteca para manipulação de arquivos ou pastas no computador.
 
-### Importanto pathlib
+#### Importanto pathlib:
 
     - import pathlib
+    
+    
+    
+    
 
 # Conversão de dados
 
