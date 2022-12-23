@@ -98,11 +98,30 @@ Pathlib é uma biblioteca para manipulação de arquivos ou pastas no computador
 
 #### Importanto pathlib:
 
-    - import pathlib
+    import pathlib
     
+Vamos supor que queremos ler todos os arquivos e pastas da área de trabalho do seu computador e depois criar a pasta "teste":<br>
+
+Primeiro devemos definir o caminho da "área de trabalho"(desktop):
+
+    caminho = pathlib.Path(r"c:/desktop")
     
+<h3>ITERDIR()</h3> - Com esta classe pegamos todos os arquivos e pastas do caminho acima, então podemos colocar cada objeto numa lista (iterable), ou seja, uma lista no qual podemos iterar um valor de cada vez:
+
+    arquivos_desktop = caminho.iterdir()
+
+<h3>.NAME</h3> - Com .name iremos ler cada item da lista de objetos acima, e coloca-los em uma lista usando for:
+
+    lista_itens = []
+    for item in arquivos_desktop:
+        lista_itens.append(item.name) # append adiciona o ".NAME" do item à lista
+    print(lista_itens)
     
+ IMPRIME:<br>
+ 
+    ['lixeira', 'documents', 'minhas imagens'] # vai imprimir todos itens do seu desktop
     
+<hr>
 
 # Conversão de dados
 
