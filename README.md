@@ -9,11 +9,12 @@ mostrando bibliotecas e métodos essenciais com objetivo de criar uma consulta r
 
 * [Pandas](#pandas)
 * [Pathlib](#Pathlib)
+* [Conversão de dados](#conversão-de-dados)
 * [Desenvolvedor](#desenvolvedor)
 
 # Pandas
 
-Consulta rápida - Pandas
+Pandas é uma das principais bibliotecas de manipulação de dados/tabelas do python.
 
 #### Importando pandas:
     - import pandas as pd
@@ -65,21 +66,6 @@ max ou min (ja visto anteriormente). Abaixo exemplo de agrupamento com soma dos 
 #### Ordenando colunas do maior para o menor:
     - df = df.sort_values('nome da coluna a ordenar', ascending=True) 
      *** ascending=False == ordem decrescente
-    
-#### Trabalhando com datas no pandas:
-
-Datas geralmente não são reconhecidas, pra isso temos que converter datas de uma tabela para 
-datetime, o pandas faz isso com PD.TO_DATETIME():
-
-    - df[nomedacoluna] = pd.to_datetime(df[nomedacoluna], format='%d/%m/%Y')
-    
-OBS: no format='%d/%m/%Y' temos que informar pro pandas qual formato "está formatada a tabela"
-para assim ela fazer a conversão correta.<br>
-Depois de convertida a data para datetime temos acesso ao metodo (.day), (.month) e (.ano)<br>
-Exemplo como pegar o mês em um date time:
-
-    - mes = df['data'].month
-    * método .month extrai somente o mês da data.
 
 #### Transformando coluna em linha SET_INDEX()
 
@@ -106,12 +92,31 @@ Atenção, o parametro orient='index' transforma as colunas em linhas.
     - df = pd.DataFrame.from_dict(nomedodict, orient='index')
 
 # Pathlib
+
 Pathlib é uma biblioteca para manipulação de arquivos ou pastas no computador.
 
 ### Importanto pathlib
 
     - import pathlib
 
+# Conversão de dados
+
+Ferramentas de conversão de dados.
+
+#### Conversão de datas (TO_DATETIME())
+
+Datas geralmente não são reconhecidas, pra isso temos que converter datas de uma tabela para 
+datetime, o pandas faz isso com PD.TO_DATETIME():
+
+    - df[nomedacoluna] = pd.to_datetime(df[nomedacoluna], format='%d/%m/%Y')
+    
+OBS: no format='%d/%m/%Y' temos que informar pro pandas qual formato "está formatada a tabela"
+para assim ela fazer a conversão correta.<br>
+Depois de convertida a data para datetime temos acesso ao metodo (.day), (.month) e (.ano)<br>
+Exemplo como pegar o mês em um date time:
+
+    - mes = df['data'].month
+    * método .month extrai somente o mês da data.
 
     
 # Desenvolvedor
