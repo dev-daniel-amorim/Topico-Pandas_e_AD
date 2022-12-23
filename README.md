@@ -100,17 +100,17 @@ Pathlib é uma biblioteca para manipulação de arquivos ou pastas no computador
 
     import pathlib
     
-Vamos supor que queremos ler todos os arquivos e pastas da área de trabalho do seu computador e depois criar a pasta "teste":<br>
+Vamos supor que queremos ler todos os arquivos e pastas da área de trabalho do seu computador e depois criar a pasta "teste" e salvar dentro dela uma tabela ficticia (my_table) com nome de "minha tabela":<br>
 
 Primeiro devemos definir o caminho da "área de trabalho"(desktop):
 
     caminho = pathlib.Path(r"c:/desktop")
     
-<h3>ITERDIR()</h3> - Com esta classe pegamos todos os arquivos e pastas do caminho acima, então podemos colocar cada objeto numa lista (iterable), ou seja, uma lista no qual podemos iterar um valor de cada vez:
+<h5>ITERDIR()</h5> - Com esta classe pegamos todos os arquivos e pastas do caminho acima, então podemos colocar cada objeto numa lista (iterable), ou seja, uma lista no qual podemos iterar um valor de cada vez:
 
     arquivos_desktop = caminho.iterdir()
 
-<h3>.NAME</h3> - Com .name iremos ler cada item da lista de objetos acima, e coloca-los em uma lista usando for:
+<h5>.NAME</h5> - Com .name iremos ler cada item da lista de objetos acima, e coloca-los em uma lista usando for:
 
     lista_itens = []
     for item in arquivos_desktop:
@@ -120,8 +120,16 @@ Primeiro devemos definir o caminho da "área de trabalho"(desktop):
  IMPRIME:<br>
  
     ['lixeira', 'documents', 'minhas imagens'] # vai imprimir todos itens do seu desktop
+
+<h5>MKDIR()</h5> Com mkdir podemos criar uma pasta no caminho específico:
+
+    novapasta = caminho / teste #cria a pasta de nome "teste" no "caminho"
+    novapasta.mkdir()
     
-<hr>
+<h5>TO_CSV()</h5> Salvando a tabela "minha tabela" na pasta "teste" com formato CSV:
+    
+    my_table.to_csv("c:/desktop/teste/minha_tabela.csv")
+    #supondo que "my_table" seja uma dataframe já existente, que será salva com nome "minha tabela"
 
 # Conversão de dados
 
