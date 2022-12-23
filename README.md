@@ -1,28 +1,19 @@
-# Pandas - Análise de dados
- Análise de dados em Python usando biblioteca Pandas.
+# Ferramentas de análise de dados
+Este máterial tem objetivo de apresentar as principais ferramentas para análise de dados, 
+mostrando bibliotecas e métodos essenciais com objetivo de criar uma consulta rápida.<br>
+<br>
+:construction: ESTE MATÉRIAL ESTÁ EM CONSTANTE ATUALIZAÇÃO :construction:
+
 
 # Índice 
 
-* [Descrição do Projeto](#descrição-do-projeto)
+* [Pandas](#pandas)
+* [Pathlib](#Pathlib)
 * [Desenvolvedor](#desenvolvedor)
-* [Lista de comandos](#Lista-de-comandos)
 
+# Pandas
 
-# Descrição do projeto
-
-O intuito deste material é o estudo da ferramenta do Python que auxilia no data science chamada Pandas.<br>
-Mas oq eu é Pandas e para que serve?<br>
-- Melhor biblioteca/ferramenta para análise de dados capaz de ler e manipular informações de datasets com quantidades enormes de dados, o Pandas consegue lidar com uma mistura de listas e dicionários de uma forma muito eficiente.
-
-# Desenvolvedor
-
-| [<img src="https://user-images.githubusercontent.com/115194365/202005566-f6278b6c-4f75-416f-b01c-e79b8d04f02e.jpg" width=115><br><sub>Daniel de Souza Amorim</sub>](https://github.com/DaniellsamorimGit) |
-| :---: | 
-
-# Lista de comandos
-
-Abaixo segue a lista e descrição dos comandos da biblioteca Pandas que iremos aprender neste tutorial, o objetivo
-deste é ter um banco de consulta de algumas funções Pandas que podem ser úteis em projetos futuros:
+Consulta rápida - Pandas
 
 #### Importando pandas:
     - import pandas as pd
@@ -113,6 +104,17 @@ Atenção aos parametros: encoding='utf-8', encoding='cp1252', encoding='latin1'
 Atenção, o parametro orient='index' transforma as colunas em linhas.
 
     - df = pd.DataFrame.from_dict(nomedodict, orient='index')
+
+# Pathlib
+Pathlib é uma biblioteca para manipulação de arquivos ou pastas no computador.
+
+### Importanto pathlib
+
+    - import pathlib
+
+
     
-    
-    
+# Desenvolvedor
+
+| [<img src="https://user-images.githubusercontent.com/115194365/202005566-f6278b6c-4f75-416f-b01c-e79b8d04f02e.jpg" width=115><br><sub>Daniel de Souza Amorim</sub>](https://github.com/DaniellsamorimGit) |
+| :---: | 
