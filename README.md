@@ -73,11 +73,16 @@ max ou min (ja visto anteriormente). Abaixo exemplo de agrupamento com soma dos 
     
 #### Localizando item pelo nome do index LOC()
 
-    - db.loc[['nome da linha']]
+    - db.loc[[nome da linha, nome da coluna]]
     
-#### Localizando item pela linha x coluna ILOC()
+#### Localizando item pela linha/coluna ILOC()
 
-    - db.iloc(linha, coluna)
+    - db.iloc(numero da linha, numero da coluna)
+    
+#### Localizando index de texto INDEX[]
+
+    - db.iloc.index(0)
+    # Pega o texto do index de posição zero
     
 #### Salvando uma tabela
 
