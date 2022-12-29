@@ -81,7 +81,7 @@ max ou min (ja visto anteriormente). Abaixo exemplo de agrupamento com soma dos 
     
 #### Localizando index de texto INDEX[]
 
-    - db.iloc.index(0)
+    - db.index(0)
     # Pega o texto do index de posição zero
     
 #### Salvando uma tabela
