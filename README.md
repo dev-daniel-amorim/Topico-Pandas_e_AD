@@ -84,6 +84,14 @@ max ou min (ja visto anteriormente). Abaixo exemplo de agrupamento com soma dos 
     - db.index(0)
     # Pega o texto do index de posição zero
     
+#### Manipulando itens de uma tabela aplicando uma função
+
+    def format(valor): #valor é cada item da coluna
+    return valor.replace("gmail", "hotmail") #para vada item onde tem "gmail" substituir por "hotmail
+
+    tabela['E-mail'] = tabela['E-mail'].apply(format) # aplica para cada item da coluna "E-mail" a função format
+    display(tabela)
+    
 #### Salvando uma tabela
 
 Atenção aos parametros: encoding='utf-8', encoding='cp1252', encoding='latin1' ou encoding='ISO-8859-1'
