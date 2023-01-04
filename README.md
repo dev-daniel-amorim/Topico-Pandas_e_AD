@@ -115,6 +115,17 @@ Atenção, o parametro orient='index' transforma os nomes das colunas em nome do
 lista_tupla = [('nome', 'preco', 'link'), ('nome', 'preco', 'link')]
 
     - nova_tabela = pd.DataFrame(lista_tupla, columns=['nome', 'preco', 'link'])
+    
+#### Concatenando 2 tabelas(ou mais) em 1 tabela principal:
+
+    tabela_principal = pd.DataFrame()
+    tabela_principal = pd.concat([tabela_principal, tabela1])
+    tabela_principal = pd.concat([tabela_principal, tabela2])
+    # Feito isso juntamos 2 tabelas em uma só
+    # os index irão meio bagunçado entao usamos reset_index para reordenar os index:
+    # drop=True descarta os index antigos (bagunçados)
+    tabela_principal = tabela_principal.reset_index(drop=True)
+    
 
 # Pathlib
 
