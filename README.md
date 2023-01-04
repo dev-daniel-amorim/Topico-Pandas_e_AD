@@ -19,6 +19,10 @@ Pandas é uma das principais bibliotecas de manipulação de dados/tabelas do py
 #### Importando pandas:
     - import pandas as pd
     
+#### Criando uma tabela (preparação inicial)
+    - table = pd.DataTable()
+    # Feito isso criamos uma tabela chamada "table" vazia
+    
 #### Lendo um arquivo:
     - df = pd.read_csv(r'caminho do arquivo')
     
