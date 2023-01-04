@@ -104,9 +104,16 @@ Atenção aos parametros: encoding='utf-8', encoding='cp1252', encoding='latin1'
 
 #### Transformando um dict em um data frame
 
-Atenção, o parametro orient='index' transforma as colunas em linhas.
+dict = {"carro": "corsa", "marca": "chevrolet"}
+Atenção, o parametro orient='index' transforma os nomes das colunas em nome dos index das linhas.
 
-    - df = pd.DataFrame.from_dict(nomedodict, orient='index')
+    - df = pd.DataFrame.from_dict(dict, orient='index')
+    
+![Captura de tela_20230104_165202](https://user-images.githubusercontent.com/115194365/210638089-8d949580-ddf3-4cb3-9cb9-c2bf83581ce9.png)
+ 
+#### Transformando uma lista de tuplas em data frame
+
+
 
 # Pathlib
 
