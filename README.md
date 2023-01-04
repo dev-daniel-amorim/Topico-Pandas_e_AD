@@ -112,8 +112,9 @@ Atenção, o parametro orient='index' transforma os nomes das colunas em nome do
 ![Captura de tela_20230104_165202](https://user-images.githubusercontent.com/115194365/210638089-8d949580-ddf3-4cb3-9cb9-c2bf83581ce9.png)
  
 #### Transformando uma lista de tuplas em data frame
+lista_tupla = [('nome', 'preco', 'link'), ('nome', 'preco', 'link')]
 
-
+    - nova_tabela = pd.DataFrame(lista_tupla, columns=['nome', 'preco', 'link'])
 
 # Pathlib
 
