@@ -178,7 +178,17 @@ Parametro orient='index' transforma os nomes das colunas em nome dos index das l
     # os index irão meio bagunçado entao usamos reset_index para reordenar os index:
     # drop=True descarta os index antigos (bagunçados)
     tabela_principal = tabela_principal.reset_index(drop=True)
+
+## Somando os valores de 2 colunas e colocando resposta em uma coluna não existente
+Quando a gente faz referencia em uma tabela a uma coluna que não existe, o pandas cria essa coluna automaticamente, vejamos:<br>
+Some o valor da coluna 'TotalPay' com os valores da coluna 'TotalPayBenefits', em uma coluna chamada 'Total geral' (não existente):
+
+    tabela_sal_total['Total geral'] = tabela_sal_total['TotalPay'] + tabela_sal_total['TotalPayBenefits']
+    display(tabela_sal_total)
     
+IMPRIME:
+![Captura de tela_20230106_171513](https://user-images.githubusercontent.com/115194365/211092281-46eb7a86-0077-4350-a49f-baa9eb2ed8b0.png)
+
 
 # Biblioteca Pathlib
 
