@@ -1,6 +1,6 @@
 # Ferramentas de análise de dados
 Este máterial tem objetivo de apresentar as principais ferramentas para análise de dados, 
-mostrando bibliotecas e métodos essenciais com objetivo de criar uma consulta rápida.<br>
+mostrando bibliotecas e métodos essenciais.<br>
 <br>
 :construction: ESTE MATÉRIAL ESTÁ EM CONSTANTE ATUALIZAÇÃO :construction:
 
@@ -19,11 +19,10 @@ Pandas é uma das principais bibliotecas de manipulação de dados/tabelas do py
 #### Importando pandas:
     - import pandas as pd
     
-#### Criando uma tabela (preparação inicial)
+#### Criando uma tabela vazia:
     - table = pd.DataTable()
-    # Feito isso criamos uma tabela chamada "table" vazia
     
-#### Lendo um arquivo:
+#### Lendo uma tabela:
     - df = pd.read_csv(r'caminho do arquivo')
     
 #### Ver informações de cada item da tabela (tipo de dados):
@@ -31,11 +30,8 @@ Pandas é uma das principais bibliotecas de manipulação de dados/tabelas do py
     
 #### Lendo colunas específicas:
     - df = df[['coluna 1', 'coluna 2' ...]]
-    
-#### Pegando valor max e min de uma coluna:
-    - df = max(df['coluna x'])
-    - df = min(df['coluna x'])
-    
+<hr>    
+   
 ## LOC[ ] 
 localizar todas as linhas onde "coluna mes = janeiro":
     
@@ -119,12 +115,27 @@ Transformando coluna em linha:
 
     new_df = df.set_index('nome da coluna')
     
-#### Localizando index de texto INDEX[]
+## INDEX()
+Pega o texto de um indexquando não numérico:
 
-    - db.index(0)
-    # Pega o texto do index de posição zero
+    db.index(0)
+
+Pega o index de um item na coluna:
+
+    df.loc[df['Funcionário'] = joao].index 
     
-#### Manipulando itens de uma tabela aplicando uma função
+Cria uma lista de index onde salário é maior que 1000:
+
+    indexs = df.loc[df['Salario'] > 1000].index  
+    
+## MAX e MIN
+Pega valor máximo e mínimo de uma coluna:
+
+    df = max(df['coluna x'])
+    df = min(df['coluna x'])
+    
+## APPLY()
+Aplica uma função pré definida para cada item em uma coluna:
 
     def format(valor): #valor é cada item da coluna
         return valor.replace("gmail", "hotmail") #para vada item onde tem "gmail" substituir por "hotmail
@@ -132,27 +143,28 @@ Transformando coluna em linha:
     tabela['E-mail'] = tabela['E-mail'].apply(format) # aplica para cada item da coluna "E-mail" a função format
     display(tabela)
     
-#### Salvando uma tabela
+## Salvando uma tabela
 
-Atenção aos parametros: encoding='utf-8', encoding='cp1252', encoding='latin1' ou encoding='ISO-8859-1'
+    df.to_csv('caminho/arquivo.extensao', sep=';', encoding='latin1')
     
-    - dataframe.to_csv('nome do qrquivo.extensao', sep=';', encoding='latin1')
+Tipos de encoding: encoding='utf-8', encoding='cp1252', encoding='latin1' ou encoding='ISO-8859-1'<br>
+Sep: É o tipo de separador entre os dados, pode ser ponto, virgula etc.
 
-#### Transformando um dict em um data frame
+## Transformando um dicionário em um data frame
 
-dict = {"carro": "corsa", "marca": "chevrolet"}
-Atenção, o parametro orient='index' transforma os nomes das colunas em nome dos index das linhas.
-
-    - df = pd.DataFrame.from_dict(dict, orient='index')
+    dict = {"carro": "corsa", "marca": "chevrolet"}
+    df = pd.DataFrame.from_dict(dict, orient='index')
     
+Parametro orient='index' transforma os nomes das colunas em nome dos index das linhas.
 ![Captura de tela_20230104_165202](https://user-images.githubusercontent.com/115194365/210638089-8d949580-ddf3-4cb3-9cb9-c2bf83581ce9.png)
  
-#### Transformando uma lista de tuplas em data frame
-lista_tupla = [('nome', 'preco', 'link'), ('nome', 'preco', 'link')]
+ 
+## Transformando uma lista de tuplas em data frame
 
-    - nova_tabela = pd.DataFrame(lista_tupla, columns=['nome', 'preco', 'link'])
+    lista_tupla = [('nome', 'preco', 'link'), ('nome', 'preco', 'link')]
+    nova_tabela = pd.DataFrame(lista_tupla, columns=['nome', 'preco', 'link'])
     
-#### Concatenando 2 tabelas(ou mais) em 1 tabela principal:
+## Concatenando 2 tabelas(ou mais) em 1 tabela principal:
 
     tabela_principal = pd.DataFrame()
     tabela_principal = pd.concat([tabela_principal, tabela1])
@@ -163,7 +175,7 @@ lista_tupla = [('nome', 'preco', 'link'), ('nome', 'preco', 'link')]
     tabela_principal = tabela_principal.reset_index(drop=True)
     
 
-# Pathlib
+# Biblioteca Pathlib
 
 Pathlib é uma biblioteca para manipulação de arquivos ou pastas no computador.<br>
 * <a href="https://docs.python.org/3/library/pathlib.html">Ir para documentação Pathlib</a>
