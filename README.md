@@ -36,19 +36,19 @@ Pandas é uma das principais bibliotecas de manipulação de dados/tabelas do py
     - df = max(df['coluna x'])
     - df = min(df['coluna x'])
     
-### LOC[] 
+## LOC[ ] 
 localizar todas as linhas onde "coluna mes = janeiro":
     
     df.loc[df["coluna mes"] == "janeiro"]
     
 Localizar item pelo nome do index e da coluna:
 
-    db.loc[[nome da linha, nome da coluna]]
+    db.loc[titulo da linha, titulo da coluna]
     
-## ILOC()
+## ILOC[ ]
 Localizar item pelo número do index e da coluna:
 
-    db.iloc(numero da linha, numero da coluna)    
+    db.iloc[numero da linha, numero da coluna]  
     
       
 ## DROP()
