@@ -159,7 +159,7 @@ Sep: É o tipo de separador entre os dados, pode ser ponto, virgula etc.
     dict = {"carro": "corsa", "marca": "chevrolet"}
     df = pd.DataFrame.from_dict(dict, orient='index')
     
-Parametro orient='index' transforma os nomes das colunas em nome dos index das linhas.
+Parametro orient='index' transforma os nomes das colunas em nome dos index das linhas.<br>
 ![Captura de tela_20230104_165202](https://user-images.githubusercontent.com/115194365/210638089-8d949580-ddf3-4cb3-9cb9-c2bf83581ce9.png)
  
  
