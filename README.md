@@ -100,6 +100,7 @@ Agrupa itens de uma coluna, transformando os itens em index e realizando uma aç
 Ações:
 * .SUM(): Para somar os itens.
 * .MEAN(): Para calcular a média dos itens.
+* .COUNT(): Conta a quantidade de itens naquela coluna.
 
     - db = db.groupby('nomedacoluna').sum()
     
