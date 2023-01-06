@@ -17,20 +17,21 @@ mostrando bibliotecas e métodos essenciais.<br>
 Pandas é uma das principais bibliotecas de manipulação de dados/tabelas do python.
 
 #### Importando pandas:
-    - import pandas as pd
+    import pandas as pd
     
 #### Criando uma tabela vazia:
-    - table = pd.DataTable()
+    table = pd.DataTable()
     
 #### Lendo uma tabela:
-    - df = pd.read_csv(r'caminho do arquivo')
+    df = pd.read_csv(r'caminho do arquivo')
     
 #### Ver informações de cada item da tabela (tipo de dados):
-    - df.info()
+    df.info()
     
 #### Lendo colunas específicas:
-    - df = df[['coluna 1', 'coluna 2' ...]]
-<hr>    
+    df = df[['coluna 1', 'coluna 2' ...]]
+<hr> 
+<br>
    
 ## LOC[ ] 
 localizar todas as linhas onde "coluna mes = janeiro":
