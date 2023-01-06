@@ -109,6 +109,7 @@ Ações:
 Ordena linhas de uma coluna:
 * Crescente: ascending=True
 * Decrescente: ascending=False
+Exemplo:
 
     df = df.sort_values('nome da coluna a ordenar', ascending=True) 
 
