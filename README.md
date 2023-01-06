@@ -40,7 +40,11 @@ Pandas é uma das principais bibliotecas de manipulação de dados/tabelas do py
 localizar todas as linhas onde "coluna mes = janeiro":
     
     df.loc[df["coluna mes"] == "janeiro"]
+
+Pegar o número do INDEX onde "coluna mes = janeiro":
     
+    df.loc[df["coluna mes"] == "janeiro"].index
+       
 Localizar item pelo nome do index e da coluna:
 
     db.loc[titulo da linha, titulo da coluna]
