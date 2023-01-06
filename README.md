@@ -62,9 +62,11 @@ Parâmetros:
 * inplace: True, altera o dataframe original sem precisar atribuir ao próprio dataframe.
 
 Removendo uma lista de colunas:
+    
     df = df.drop(['coluna 1', 'coluna 2' ...], axis=1)
     
 Removendo uma lista de index:
+    
     df = df.drop([1, 3 ...], axis=0)
     
 DESAFIO: Remover todas as linhas da coluna "Salario", onde salário <= 0:
@@ -84,32 +86,36 @@ tabelas a serem mescladas uma coluna com mesmo nome para todos (esse sera nosso 
     new_df = df1.merge(df2, on="coluna") 
     ** onde coluna = nome da coluna comum as duas tabelas (ID)
     
-#### Alterando nome de uma coluna .RENAME():
-    - df = df.rename(columns={'nome_antigo': 'novo_nome'})
+## RENAME()
+Alterando nome de uma coluna
+
+    df = df.rename(columns={'nome_antigo': 'novo_nome'})
     
-#### Contando quantas vezes um item aparece na tabela .VALUE_COUNTS()
+## VALUE_COUNTS()
+Contando quantas vezes um item aparece na tabela.
 No caso abaixo vai mostrar quantas vezes cada cliente comprou já que cada compra de cada cliente fica registrada.
 
     - compras_cada_cliente = df_vendas['compra cliente'].value_counts()
-#### Podemos tambem agrupar cada item de uma DB e calcular seus valores:
-Para agrupar usamos o GROUPBY():
-
-    - db = db.groupby('nomedacoluna')
     
-Para calcular os valores dos itens agrupados podemos somar .SUM()/ fazer a média .MEAN()/
-max ou min (ja visto anteriormente). Abaixo exemplo de agrupamento com soma dos itens:
+## GROUPBY()
+Agrupa itens de uma coluna, transformando os itens em index e realizando uma ação com seus valores:<br>
+Ações:
+* .SUM(): Para somar os itens.
+* .MEAN(): Para calcular a média dos itens.
 
     - db = db.groupby('nomedacoluna').sum()
     
-#### Ordenando colunas do maior para o menor:
-    - df = df.sort_values('nome da coluna a ordenar', ascending=True) 
-     *** ascending=False == ordem decrescente
+## SORT_VALUES()
+Ordena linhas de uma coluna:
+* Crescente: ascending=True
+* Decrescente: ascending=False
 
-#### Transformando coluna em linha SET_INDEX()
+    df = df.sort_values('nome da coluna a ordenar', ascending=True) 
 
-    - new_df = df.set_index('nomeda coluna')
-    
+## SET_INDEX()
+Transformando coluna em linha:
 
+    new_df = df.set_index('nome da coluna')
     
 #### Localizando index de texto INDEX[]
 
