@@ -36,18 +36,48 @@ Pandas é uma das principais bibliotecas de manipulação de dados/tabelas do py
     - df = max(df['coluna x'])
     - df = min(df['coluna x'])
     
-#### Comando .LOC[...] localiza item com base num parâmetro:
-    - df.loc[df["coluna mes"] == "janeiro"]
+### LOC[] 
+localizar todas as linhas onde "coluna mes = janeiro":
     
-#### Removendo colunas(axis=1) ou linhas(axis=0) específicas .DROP():
-    - df = df.drop(['coluna 1', 'coluna 2' ...], axis=1)
+    df.loc[df["coluna mes"] == "janeiro"]
     
-#### Mesclando tabelas distintas .MERGE():
-Podemos mesclar tabelas com o .merge(), porém para isso temos que ter em todas as 
+Localizar item pelo nome do index e da coluna:
+
+    db.loc[[nome da linha, nome da coluna]]
+    
+## ILOC()
+Localizar item pelo número do index e da coluna:
+
+    db.iloc(numero da linha, numero da coluna)    
+    
+      
+## DROP()
+Parâmetros:
+* labels: String ou lista de strings referentes ao nome de linhas ou colunas.
+* axis: 0 ou 'index' para linhas, e 1 ou 'columns' para colunas.
+* inplace: True, altera o dataframe original sem precisar atribuir ao próprio dataframe.
+
+Removendo uma lista de colunas:
+    df = df.drop(['coluna 1', 'coluna 2' ...], axis=1)
+    
+Removendo uma lista de index:
+    df = df.drop([1, 3 ...], axis=0)
+    
+DESAFIO: Remover todas as linhas da coluna "Salario", onde salário <= 0:
+    
+    # pegaa lista de indexs onde salario <= 0
+    indexs = df.loc[df['Salario']<=0].index   
+    
+    # para cada index na lista de index exclui a linha
+    for index in indexs:
+        df.drop(index=index, inplace=True)
+
+
+## MERGE()
+Podemos mesclar tabelas com o MERGE, para isso temos que ter em todas as 
 tabelas a serem mescladas uma coluna com mesmo nome para todos (esse sera nosso ID):
 
-
-    - new_df = df1.merge(df2, on="coluna") 
+    new_df = df1.merge(df2, on="coluna") 
     ** onde coluna = nome da coluna comum as duas tabelas (ID)
     
 #### Alterando nome de uma coluna .RENAME():
@@ -75,13 +105,7 @@ max ou min (ja visto anteriormente). Abaixo exemplo de agrupamento com soma dos 
 
     - new_df = df.set_index('nomeda coluna')
     
-#### Localizando item pelo nome do index LOC()
 
-    - db.loc[[nome da linha, nome da coluna]]
-    
-#### Localizando item pela linha/coluna ILOC()
-
-    - db.iloc(numero da linha, numero da coluna)
     
 #### Localizando index de texto INDEX[]
 
