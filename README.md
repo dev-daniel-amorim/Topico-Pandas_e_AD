@@ -112,11 +112,7 @@ Exemplo:
 
     df = df.sort_values('nome da coluna a ordenar', ascending=True) 
 
-## SET_INDEX()
-Transformando coluna em linha:
 
-    new_df = df.set_index('nome da coluna')
-    
 ## INDEX()
 Pega o texto de um indexquando não numérico:
 
@@ -129,6 +125,12 @@ Pega o index de um item na coluna:
 Cria uma lista de index onde salário é maior que 1000:
 
     indexs = df.loc[df['Salario'] > 1000].index  
+
+
+## SET_INDEX()
+Transformando coluna em linha:
+
+    new_df = df.set_index('nome da coluna')
     
 ## MAX e MIN
 Pega valor máximo e mínimo de uma coluna:
