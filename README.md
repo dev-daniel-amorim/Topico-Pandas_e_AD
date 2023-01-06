@@ -7,12 +7,12 @@ mostrando bibliotecas e métodos essenciais.<br>
 
 # Índice 
 
-* [Pandas](#pandas)
-* [Pathlib](#Pathlib)
+* [Biblioteca Pandas](#biblioteca-pandas)
+* [Biblioteca Pathlib](#biblioteca-pathlib)
 * [Conversão de dados](#conversão-de-dados)
 * [Desenvolvedor](#desenvolvedor)
 
-# Pandas
+# Biblioteca Pandas
 
 Pandas é uma das principais bibliotecas de manipulação de dados/tabelas do python.
 
