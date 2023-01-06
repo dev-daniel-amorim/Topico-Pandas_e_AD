@@ -45,7 +45,7 @@ Pegar o número do INDEX onde "coluna mes = janeiro":
     
     df.loc[df["coluna mes"] == "janeiro"].index
        
-Localizar item pelo nome do index e da coluna:
+Localizar item pelo título do index e da coluna:
 
     db.loc[titulo da linha, titulo da coluna]
     
