@@ -186,7 +186,7 @@ Some o valor da coluna 'TotalPay' com os valores da coluna 'TotalPayBenefits', e
     tabela_sal_total['Total geral'] = tabela_sal_total['TotalPay'] + tabela_sal_total['TotalPayBenefits']
     display(tabela_sal_total)
     
-IMPRIME:
+IMPRIME:<br>
 ![Captura de tela_20230106_171513](https://user-images.githubusercontent.com/115194365/211092281-46eb7a86-0077-4350-a49f-baa9eb2ed8b0.png)
 
 
