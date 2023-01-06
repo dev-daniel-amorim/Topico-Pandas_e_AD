@@ -52,6 +52,7 @@ Localizar item pelo número do index e da coluna:
     
       
 ## DROP()
+Exclui linhas ou colunas deuma tabela.<br>
 Parâmetros:
 * labels: String ou lista de strings referentes ao nome de linhas ou colunas.
 * axis: 0 ou 'index' para linhas, e 1 ou 'columns' para colunas.
