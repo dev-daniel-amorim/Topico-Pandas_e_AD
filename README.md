@@ -175,7 +175,20 @@ Aplica uma função pré definida para cada item em uma coluna:
 
     tabela['E-mail'] = tabela['E-mail'].apply(format) # aplica para cada item da coluna "E-mail" a função format
     display(tabela)
+
+## Usando SHAPE, ISNULL e SUM para calcular porcentagem de dados nulos em uma tabela
+
+### SHAPE
+df.shape: Mostra a quantidadede total linhas e colunas de uma tabela.<br>
+### ISNULL().SUM()
+df.isnull().sum: Soma a qunatidade de valores nulos em cada coluna.<br>
+
+ENTÂO, se eu tenho a quantidade de valores nulos, dividir pela quantidade total e multiplicar por 100, eu tenho a porcentagem de valores nulos em uma tabela, vamos pra prática!
+
+    (tabela.isnull().sum() / tabela.shape[0] * 100).sort_values()
     
+A saída vai ser um relatório com porcentagem de nulos em cada coluna da tabela.
+
 ## Salvando uma tabela
 
     df.to_csv('caminho/arquivo.extensao', sep=';', encoding='latin1')
