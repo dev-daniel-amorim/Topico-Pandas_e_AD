@@ -89,6 +89,31 @@ Alterando nome de uma coluna
 
     df = df.rename(columns={'nome_antigo': 'novo_nome'})
     
+## NUNIQUE()
+Conta nos eixo 0 (linha) ou 1 (coluna) a quantidade de valores unicos.
+Parâmetros:
+axis= 0 'índice', 1 'colunas', padrão 0
+dropna= True, não inclui NaN nas contagens.
+
+    df = pd.DataFrame({"A":[14, 4, 5, 4, 1],
+                       "B":[5, 2, 54, 3, 2],
+                       "C":[20, 20, 7, 3, 8],
+                       "D":[14, 3, 6, 2, 6]})
+   # prrocurar unique values nas colunas
+   df.nunique(axis = 1)
+   
+SAÍDA:<br>
+![1-603](https://user-images.githubusercontent.com/115194365/211131770-cf428b15-2ece-4fd5-9e6c-9809c056b74c.png)
+   
+## UNIQUE()
+Igual o NUNIQUE, porém ele mostra uma lista de quais são os dados que são únicos (sem repeti-los).
+ 
+    df = pd.DataFrame({"A":[None, "olivia", "olivia", "", "amanda"]})
+    print(df['A'}.unique()
+ 
+SAÍDA:<br>
+    [Nam, 'olivia', "", 'amanda']
+    
 ## VALUE_COUNTS()
 Contando quantas vezes um item aparece na tabela.
 No caso abaixo vai mostrar quantas vezes cada cliente comprou já que cada compra de cada cliente fica registrada.
