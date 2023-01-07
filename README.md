@@ -90,10 +90,11 @@ Alterando nome de uma coluna
     df = df.rename(columns={'nome_antigo': 'novo_nome'})
     
 ## NUNIQUE()
-Conta nos eixo 0 (linha) ou 1 (coluna) a quantidade de valores unicos.
-Parâmetros:
-axis= 0 'índice', 1 'colunas', padrão 0
-dropna= True, não inclui NaN nas contagens.
+
+Conta nos eixo 0 (linha) ou 1 (coluna) a quantidade de valores unicos.<br>
+Parâmetros:<br>
+axis= 0 'índice', 1 'colunas', padrão 0<br>
+dropna= True, não inclui NaN nas contagens.<br>
 
     df = pd.DataFrame({"A":[14, 4, 5, 4, 1],
                        "B":[5, 2, 54, 3, 2],
