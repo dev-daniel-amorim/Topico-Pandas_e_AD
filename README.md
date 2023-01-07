@@ -1,7 +1,8 @@
 # Ferramentas de análise de dados
 Este máterial tem objetivo de apresentar as principais ferramentas para análise de dados, 
 mostrando bibliotecas e métodos essenciais.<br>
-OBS: Esse material é um resumo das funções, uma consulta rápida, apresentando somente o essencial e comandos mas utilizados no dia a dia, pois algumas dessas funções apresentam muito mais parâmetros.
+<br>
+OBS: Esse material é um breve resumo das ferramentas, uma espécie de consulta rápida para refrescar a memória, apresentando somente o essencial e comandos mas utilizados no dia a dia, pois algumas dessas funções apresentam muito mais parâmetros.
 <br>
 :construction: ESTE MATÉRIAL ESTÁ EM CONSTANTE ATUALIZAÇÃO :construction:
 
@@ -128,7 +129,7 @@ Ações:
 * .MEAN(): Para calcular a média dos itens.
 * .COUNT(): Conta a quantidade de itens naquela coluna.
 
-    - db = db.groupby('nomedacoluna').sum()
+        db = db.groupby('nomedacoluna').sum()
     
 ## SORT_VALUES()
 Ordena linhas de uma coluna:
