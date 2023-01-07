@@ -240,15 +240,24 @@ IMPRIME:<br>
 ![Captura de tela_20230106_171513](https://user-images.githubusercontent.com/115194365/211092281-46eb7a86-0077-4350-a49f-baa9eb2ed8b0.png)
 
 ## Operações aritméticas em Series:
->>> s = pd.Series([1, 2, 3, 4, 5], index=['a', 'b', 'c', 'd', 'e'])
-#Somando todos os valores presentes na Series por 2
->>> s.add(2)
-#Subtraindo 2 de todos os valores
->>> s.sub(2)
-#Multiplicando todos os valores por 2
->>> s.mul(2)
-#Dividindo valores por 2
->>> s.div(2)
+
+    s = pd.Series([1, 2, 3, 4, 5], index=['a', 'b', 'c', 'd', 'e'])
+        
+## Somando todos os valores presentes na Series por 2
+
+    s.add(2)
+    
+## Subtraindo 2 de todos os valores
+
+    s.sub(2)
+    
+## Multiplicando todos os valores por 2
+
+    s.mul(2)
+    
+## Dividindo valores por 2
+
+    s.div(2)
 
 
 # Biblioteca Pathlib
