@@ -99,8 +99,7 @@ dropna= True, não inclui NaN nas contagens.
                        "B":[5, 2, 54, 3, 2],
                        "C":[20, 20, 7, 3, 8],
                        "D":[14, 3, 6, 2, 6]})
-   # prrocurar unique values nas colunas
-   df.nunique(axis = 1)
+    df.nunique(axis = 1)
    
 SAÍDA:<br>
 ![1-603](https://user-images.githubusercontent.com/115194365/211131770-cf428b15-2ece-4fd5-9e6c-9809c056b74c.png)
