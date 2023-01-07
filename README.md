@@ -142,6 +142,16 @@ Exemplo:
     df = df.sort_values('nome da coluna a ordenar', ascending=True) 
 
 
+## DESCRIBE()
+Resumo estatístico do DataFrame, com quartis, mediana, etc.
+
+    df.describe()
+    
+## MEDIAN()
+Mediana dos valores
+
+    df.median()
+
 ## INDEX()
 Pega o texto de um indexquando não numérico:
 
@@ -204,7 +214,6 @@ Sep: É o tipo de separador entre os dados, pode ser ponto, virgula etc.
 Parametro orient='index' transforma os nomes das colunas em nome dos index das linhas.<br>
 ![Captura de tela_20230104_165202](https://user-images.githubusercontent.com/115194365/210638089-8d949580-ddf3-4cb3-9cb9-c2bf83581ce9.png)
  
- 
 ## Transformando uma lista de tuplas em data frame
 
     lista_tupla = [('nome', 'preco', 'link'), ('nome', 'preco', 'link')]
@@ -229,6 +238,17 @@ Some o valor da coluna 'TotalPay' com os valores da coluna 'TotalPayBenefits', e
     
 IMPRIME:<br>
 ![Captura de tela_20230106_171513](https://user-images.githubusercontent.com/115194365/211092281-46eb7a86-0077-4350-a49f-baa9eb2ed8b0.png)
+
+## Operações aritméticas em Series:
+>>> s = pd.Series([1, 2, 3, 4, 5], index=['a', 'b', 'c', 'd', 'e'])
+#Somando todos os valores presentes na Series por 2
+>>> s.add(2)
+#Subtraindo 2 de todos os valores
+>>> s.sub(2)
+#Multiplicando todos os valores por 2
+>>> s.mul(2)
+#Dividindo valores por 2
+>>> s.div(2)
 
 
 # Biblioteca Pathlib
