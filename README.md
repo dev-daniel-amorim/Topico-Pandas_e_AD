@@ -200,10 +200,18 @@ ENTÂO, se eu tenho a quantidade de valores nulos, dividir pela quantidade total
 A saída vai ser um relatório com porcentagem de nulos em cada coluna da tabela.
 
 ## DROPNA()
-Remove todos os valores nulos (NULL) de uma tabela.
+Remove todos os valores nulos (NULL) de uma tabela por default.
 
     df = pd.read_csv('data.csv')
     newdf = df.dropna()
+    
+Excluindo somente de uma coluna específica:<br>
+Parâmetro:<br>
+subset= ['Nome da coluna']<br>
+
+    df = pd.read_csv('data.csv')
+    newdf = df.dropna(subset= ['Nome da coluna'], inplace=True)
+    
     
 ## FILLNA()
 Remove ou substitui todos valores vazios de uma coluna ou tabela.<br>
