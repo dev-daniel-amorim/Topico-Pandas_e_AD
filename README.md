@@ -208,7 +208,7 @@ Remove todos os valores nulos (NULL) de uma tabela.
 ## FILLNA()
 Remove ou substitui todos valores vazios de uma coluna ou tabela.<br>
 Parâmetros: <br>
-- Values = substitui todos os valores nulos por alguma valor indicado aqui.
+- Values = substitui todos os valores "vazios" por alguma valor indicado aqui (no exemplo abaixo por False).
 - inplace: True, executa sem precisar atribuir a mesma tabela.
 - axis: 0 linhas e 1 colunas.
 
