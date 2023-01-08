@@ -117,6 +117,8 @@ SAÍDA:<br>
     [Nam, 'olivia', "", 'amanda']
     
 ## VALUE_COUNTS()
+Parâmetros:
+normalize=True, se definido esse parâmetro, mostra aporcentagem de cada valor.
 Contando quantas vezes um item aparece na tabela.
 No caso abaixo vai mostrar quantas vezes cada cliente comprou já que cada compra de cada cliente fica registrada.
 
