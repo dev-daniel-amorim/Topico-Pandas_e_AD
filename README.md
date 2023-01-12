@@ -90,6 +90,24 @@ tabelas a serem mescladas uma coluna com mesmo nome para todos (esse sera nosso 
 Alterando nome de uma coluna
 
     df = df.rename(columns={'nome_antigo': 'novo_nome'})
+
+## LISTA DE COLUNAS DE UMA TABELA
+
+    lista = (df.columns)
+    
+## ANÁLISE EXPLORATÓRIA INICIAL
+Dicas de comandos para análise exploratória inicial:
+
+    df.dtypes # Mostra tipos de dados de uma tabela (ou df['col'].dtypes p/ coluna)
+    df.info() # informações e total e nao null
+    df.isnull().sum() #soma todos os nulos
+    df.iloc[0] # mostra o primeiro dados de cada coluna
+    df.describe # informações descritivas de cada coluna inclusive quartis
+    df.shape # numero de linhas e de colunas da tabela
+    
+    # dica: calculo de % de dados faltantes nas colunas
+    (df.isnull().sum() / df.shape[0] *100).sort_values()
+    
     
 ## NUNIQUE()
 
