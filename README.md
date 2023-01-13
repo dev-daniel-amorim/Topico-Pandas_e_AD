@@ -52,7 +52,21 @@ Localizar item pelo título do index e da coluna:
 Localizar item pelo número do index e da coluna:
 
     db.iloc[numero da linha, numero da coluna]  
-    
+## ZIP()
+Cria uma lista de tuplas com elemetos dos argumentos.<br>
+
+
+    x = [1, 2, 3]
+    y = [4, 5, 6]
+
+    for t in zip(x, y):
+        print(t)
+
+    (1, 4)
+    (2, 5)
+    (3, 6)
+
+<a href='http://devfuria.com.br/python/built-in-zip/'> Para mais sobre zip() clique aqui!</a>
       
 ## DROP()
 Exclui linhas ou colunas deuma tabela.<br>
