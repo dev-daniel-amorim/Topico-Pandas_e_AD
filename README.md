@@ -151,13 +151,12 @@ SAÍDA:<br>
 ## VALUE_COUNTS()
 Parâmetros:
 normalize=True, se definido esse parâmetro, mostra aporcentagem de cada valor.
-Contando quantas vezes um item aparece na tabela.
-No caso abaixo vai mostrar quantas vezes cada cliente comprou já que cada compra de cada cliente fica registrada.
+Conta quantas vezes cada classe aparece numa coluna (imprescindível para balanceamento de classes).
 
-    - compras_cada_cliente = df_vendas['compra cliente'].value_counts()
+    df['coluna'].value_counts()
     
 ## GROUPBY()
-Agrupa itens de uma coluna, transformando os itens em index e realizando uma ação com seus valores:<br>
+Agrupa classes de uma coluna, transformando-os em index da tabela e realizando uma ação com as demais colunas:<br>
 Ações:
 * .SUM(): Para somar os itens.
 * .MEAN(): Para calcular a média dos itens.
