@@ -1,8 +1,13 @@
 # Ferramentas de análise de dados
 Este máterial tem objetivo de apresentar as principais ferramentas para análise de dados, 
-mostrando bibliotecas e métodos essenciais.<br>
+mostrando bibliotecas e métodos essenciais para todo analista de dados.<br>
 <br>
-OBS: Esse material é um breve resumo das ferramentas, uma espécie de consulta rápida para refrescar a memória, apresentando somente o essencial e comandos mas utilizados no dia a dia, pois algumas dessas funções apresentam muito mais parâmetros.
+
+## Códigos Fontes com exemplos de utilização
+
+* [Código 1 - Ferramentas Pandas essênciais](https://github.com/dev-daniel-amorim/Analise_de_dados-Ferramentas/blob/main/Pandas%20essenciais.ipynb)
+* [Código 2 - Análise loja 01](https://github.com/dev-daniel-amorim/Analise_de_dados-Ferramentas/blob/main/An%C3%A1lise%20de%20dados%20(pandas).ipynb)
+
 <br>
 :construction: ESTE MATÉRIAL ESTÁ EM CONSTANTE ATUALIZAÇÃO :construction:
 
