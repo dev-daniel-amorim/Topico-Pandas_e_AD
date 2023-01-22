@@ -184,6 +184,11 @@ Resumo estatístico do DataFrame, com quartis, mediana, etc.
 Mediana dos valores
 
     df.median()
+    
+## MODE()[0]
+Calcula a moda dos valores (valor que mais se repete)
+
+    df['coluna'].mode()
 
 ## INDEX()
 Pega o texto de um indexquando não numérico:
