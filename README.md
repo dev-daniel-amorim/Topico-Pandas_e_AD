@@ -97,6 +97,30 @@ DESAFIO: Remover todas as linhas da coluna "Salario", onde salário <= 0:
     for index in indexs:
         df.drop(index=index, inplace=True)
 
+## DROPNA()
+Remove todos os valores nulos (NULL) de uma tabela por default.
+
+    df = pd.read_csv('data.csv')
+    newdf = df.dropna()
+    
+Excluindo valores vazios somente de uma coluna específica:<br>
+Parâmetro:<br>
+subset= ['Nome da coluna']<br>
+
+    df = pd.read_csv('data.csv')
+    df.dropna(subset= ['Nome da coluna'], inplace=True)
+      
+## FILLNA()
+Remove ou substitui todos valores vazios de uma coluna ou tabela.<br>
+Parâmetros: <br>
+- Values = substitui todos os valores "vazios" por alguma valor indicado aqui (no exemplo abaixo por False).
+- inplace: True, executa sem precisar atribuir a mesma tabela.
+- axis: 0 linhas e 1 colunas.
+
+Considerando uma coluna "tem filhos" (com dados True e False) as linhas vazias vão ser substituidas pelo valor False:
+
+        df["Tem filhos"].fillna(value=False, inplace=True, axis=0)
+
 
 ## MERGE()
 Podemos mesclar tabelas com o MERGE, para isso temos que ter em todas as 
@@ -241,31 +265,6 @@ ENTÂO, se eu tenho a quantidade de valores nulos, dividir pela quantidade total
     (tabela.isnull().sum() / tabela.shape[0] * 100).sort_values()
     
 A saída vai ser um relatório com porcentagem de nulos em cada coluna da tabela.
-
-## DROPNA()
-Remove todos os valores nulos (NULL) de uma tabela por default.
-
-    df = pd.read_csv('data.csv')
-    newdf = df.dropna()
-    
-Excluindo somente de uma coluna específica:<br>
-Parâmetro:<br>
-subset= ['Nome da coluna']<br>
-
-    df = pd.read_csv('data.csv')
-    newdf = df.dropna(subset= ['Nome da coluna'], inplace=True)
-    
-    
-## FILLNA()
-Remove ou substitui todos valores vazios de uma coluna ou tabela.<br>
-Parâmetros: <br>
-- Values = substitui todos os valores "vazios" por alguma valor indicado aqui (no exemplo abaixo por False).
-- inplace: True, executa sem precisar atribuir a mesma tabela.
-- axis: 0 linhas e 1 colunas.
-
-Considerando uma coluna "tem filhos" (com dados True e False) as linhas vazias vão ser substituidas pelo valor False:
-
-        df["Tem filhos"].fillna(value=False, inplace=True, axis=0)
 
 ## MAP()
 Aplica uma função as linhas de uma coluna.
