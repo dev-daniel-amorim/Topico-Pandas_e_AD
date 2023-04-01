@@ -3,6 +3,10 @@ Este máterial tem objetivo de apresentar as principais ferramentas para anális
 mostrando bibliotecas e métodos essenciais para todo analista de dados.<br>
 <br>
 
+| Tutorial    | Descrição/Link  |
+| --- | --- |
+|   Phython - Pandas I  | [Aula I sobre pandas com muitas dicas iniciais para análise de dados usando pandas.](https://medium.com/@dev.daniel.amorim/python-pandas-24ab58577de5)
+
 ## Códigos Fontes com exemplos de utilização
 
 * [Código 1 - Ferramentas Pandas essênciais](https://github.com/dev-daniel-amorim/Analise_de_dados-Ferramentas/blob/main/Pandas%20essenciais.ipynb)
