@@ -1,7 +1,9 @@
-# Ferramentas de análise de dados
+# Python - Pandas 
 Este máterial tem objetivo de apresentar as principais ferramentas para análise de dados, 
 mostrando bibliotecas e métodos essenciais para todo analista de dados.<br>
 <br>
+
+## Tutoriais no Medium:
 
 | Tutorial    | Descrição/Link  |
 | --- | --- |
