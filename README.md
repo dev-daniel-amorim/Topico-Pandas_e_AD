@@ -12,3 +12,8 @@ Aqui você encontrará meus projetos-estudos sobre análise de dados utilizando 
 | --- | --- | --- |
 | Análise - Lojas Contoso | [Acesse aqui a descrição do projeto.](https://github.com/dev-daniel-amorim/Analise_de_dados-Lojas_Contoso/blob/main/README.md) | [Solução](https://github.com/dev-daniel-amorim/Analise_de_dados-Lojas_Contoso/blob/main/DS-Insights-01.ipynb) |
 | Análise - Empresa A | [Acesse aqui a descrição do projeto.](https://github.com/dev-daniel-amorim/Analise_de_dados-Empresa_A/blob/main/README.md) | [Solução](https://github.com/dev-daniel-amorim/Analise_de_dados-Empresa_A/blob/main/Python%20e%20SQL%20-%20Exerc%C3%ADcio%20An%C3%A1lise%20de%20Dados.ipynb) |
+
+
+<hr>
+
+[<< Voltar para página inicial](https://github.com/dev-daniel-amorim)
