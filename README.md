@@ -3,7 +3,7 @@ Este máterial tem objetivo de apresentar uma biblioteca Python chamada PANDAS, 
 
 | Tutoriais/Títulos    | Descrição/Link Medium  | Links/Vídeos YouTube | Links/Códigos fonte |
 | --- | --- | --- | --- |
-|   Phython - Pandas I  | [Vamos estudar nessa aula algumas ferramentas importantes do Pandas.](https://medium.com/@dev.daniel.amorim/python-pandas-24ab58577de5) | [Vídeo aula](https://youtu.be/wQ1ea-3BZhA) | []() |
+| Pandas (Aula I) | [Vamos estudar nessa aula algumas ferramentas importantes do Pandas.](https://medium.com/@dev.daniel.amorim/python-pandas-24ab58577de5) | [Vídeo aula](https://youtu.be/wQ1ea-3BZhA) | []() |
 
 ## Códigos Fontes com exemplos de utilização
 
