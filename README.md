@@ -1,13 +1,9 @@
-# Python - Pandas 
-Este máterial tem objetivo de apresentar as principais ferramentas para análise de dados, 
-mostrando bibliotecas e métodos essenciais para todo analista de dados.<br>
-<br>
+# Python - Pandas e análises de dados
+Este máterial tem objetivo de apresentar uma biblioteca Python chamada PANDAS, de software livre ela é uma biblioteca que permite manipulação e análise de dados com facilidade, com ela podemos tratar em dataframes dados faltantes, visualização de dados, agregação e transformação de dados, filtragem, classificação e muito mais. Ela é amplamente utilizado em áreas como ciência de dados, análise financeira, pesquisa acadêmica, engenharia e muitas outras áreas em que a análise de dados é essencial.
 
-## Tutoriais no Medium:
-
-| Tutorial    | Descrição/Link  |
-| --- | --- |
-|   Phython - Pandas I  | [Aula I sobre pandas com muitas dicas iniciais para análise de dados usando pandas.](https://medium.com/@dev.daniel.amorim/python-pandas-24ab58577de5)
+| Tutoriais/Títulos    | Descrição/Link Medium  | Links/Vídeos YouTube | Links/Códigos fonte |
+| --- | --- | --- | --- |
+|   Phython - Pandas I  | [Aula I sobre pandas com muitas dicas iniciais para análise de dados usando pandas.](https://medium.com/@dev.daniel.amorim/python-pandas-24ab58577de5) | []() | []() |
 
 ## Códigos Fontes com exemplos de utilização
 
