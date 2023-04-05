@@ -5,7 +5,12 @@ Este máterial tem objetivo de apresentar uma biblioteca Python chamada PANDAS, 
 | --- | --- | --- | --- |
 | Pandas (Aula I) | [Vamos estudar nessa aula algumas ferramentas importantes do Pandas.](https://medium.com/@dev.daniel.amorim/python-pandas-24ab58577de5) | [Vídeo aula](https://youtu.be/wQ1ea-3BZhA) | [Código da aula](https://github.com/dev-daniel-amorim/Analise_de_dados-Ferramentas/blob/main/Pandas%20essenciais.ipynb) |
 
-## Códigos Fontes com exemplos de utilização
+## Projeto de análise de dados com Pandas
+Aqui você encontrará meus projetos-estudos sobre análise de dados utilizando o Pandas.
+
+| Projetos/Títulos  | Links/Descrição | Links/Códigos fonte | 
+| --- | --- | --- |
+| Análise - Empresa A | [Acesse aqui a descrição do projeto.](https://github.com/dev-daniel-amorim/Analise_de_dados-Empresa_A/blob/main/README.md) | [Solução](https://github.com/dev-daniel-amorim/Analise_de_dados-Empresa_A/blob/main/Python%20e%20SQL%20-%20Exerc%C3%ADcio%20An%C3%A1lise%20de%20Dados.ipynb) |
 
 * [Código 2 - Análise loja 01](https://github.com/dev-daniel-amorim/Analise_de_dados-Ferramentas/blob/main/An%C3%A1lise%20de%20dados%20(pandas).ipynb)
 
