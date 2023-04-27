@@ -3,8 +3,8 @@ Neste material vamos explorar Pandas para análise de dados bem como o Dask que 
 
 | Tutoriais/Títulos    | Descrição/Link Medium  | Links/Vídeos YouTube | Links/Códigos fonte |
 | --- | --- | :---: | :---: |
-| Pandas (Essenciais) | [Um passeio pelas principais ferramentas do Pandas pra análise de dados.](https://medium.com/@dev.daniel.amorim/python-pandas-24ab58577de5) | [Vídeo Youtube](https://youtu.be/wQ1ea-3BZhA) | [Código da aula](https://github.com/dev-daniel-amorim/Analise_de_dados-Ferramentas/blob/main/Pandas%20essenciais.ipynb) |
-| Dask x Pandas (Big Data) | [Vamos conhecer o Dask para análise de Big Data, e comparar com Pandas, Quem leva essa batalha?](https://medium.com/@dev.daniel.amorim/pandas-big-data-c0557b22b37d) | [Vídeo Youtube](https://youtu.be/rZ7sGRIioR0) | --- |
+| Pandas (Essenciais) | [Um passeio pelas principais ferramentas do Pandas pra análise de dados.](https://medium.com/@dev.daniel.amorim/python-pandas-24ab58577de5) | [Vídeo Youtube](https://youtu.be/wQ1ea-3BZhA) | [Notebook](https://github.com/dev-daniel-amorim/Analise_de_dados-Ferramentas/blob/main/Pandas%20essenciais.ipynb) |
+| Dask x Pandas (Big Data) | [Vamos conhecer o Dask para análise de Big Data, e comparar com Pandas, Quem leva essa batalha?](https://medium.com/@dev.daniel.amorim/pandas-big-data-c0557b22b37d) | [Vídeo Youtube](https://youtu.be/rZ7sGRIioR0) | [Notebook](https://github.com/dev-daniel-amorim/Topico-Pandas_e_AD/blob/main/Dask%20x%20Pandas.ipynb) |
 
 
 ## Projeto de análise de dados com Pandas
